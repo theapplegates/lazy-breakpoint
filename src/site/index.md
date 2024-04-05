@@ -5,15 +5,24 @@ layout: default
 
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples.
 
+These images have been added to the page in various sizes, using the picture element with multiple image sources.
+This is a testing blog right now. Unsplash credit will be fixed soon.
 {% set somePhotos = [
-  {url: "lighthouse-5.jpg", credit: "ezgi yıldırım", creditURL: "https://unsplash.com/photos/Ej1mWW2cd6Q"}
+  {url: "danny-greenberg-F6mBll2j-pk-unsplash.jpg", credit: "NA", creditURL: "NA"},
+  {url: "Easter-candy-eggs.jpg", credit: "NA", creditURL: "NA"},
+  {url: "jack-white-t1uQIBwGWKA-unsplash.jpg", credit: "NA", creditURL: "NA"},
+  {url: "joanna-stolowicz-8BES7-Ljtco-unsplash.jpg", credit: "", creditURL: "NA"},
+  {url: "khaled-ali-2P-E1dNbvaU-unsplash.jpg", credit: "NA", creditURL: "NA"},
+  {url: "vieste_italy.jpg", credit: "NA", creditURL: "NA"}
 ] %}
+
 <section class="post-teaser">
 {%- for photo in somePhotos %}
   <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
-  {% lazypicture photo.url, "A snazzy lighthouse" %}
+  {% lazypicture photo.url, "Some Unsplash Pics" %}
 {%- endfor -%}
 </section >
+
 
 
 ## Image transformation
@@ -40,21 +49,6 @@ The [redirects]({{ pkg.repository.url }}/blob/master/netlify.toml) and transform
 
 ## Using the picture element
 
-These images have been added to the page in various sizes, using the picture element with multiple image sources.
-
-{% set somePhotos = [
-  {url: "lighthouse-4.jpg", credit: "Charlota Blunarova", creditURL: "https://unsplash.com/photos/of4r2gHpCqU"},
-  {url: "lighthouse-3.jpg", credit: "Jesse Orrico", creditURL: "https://unsplash.com/photos/5xWf-gE_45U"},
-  {url: "lighthouse-2.jpg", credit: "Youjeen Cho", creditURL: "https://unsplash.com/photos/kNxB07EA9r4"},
-  {url: "lighthouse-1.jpg", credit: "Chris Meads", creditURL: "https://unsplash.com/photos/9FidI-IQxwY"}
-] %}
-
-<section class="post-teaser">
-{%- for photo in somePhotos %}
-  <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
-  {% lazypicture photo.url, "A snazzy lighthouse" %}
-{%- endfor -%}
-</section >
 
 
 ## A picture helper
