@@ -3,7 +3,7 @@ title: Roll your own lazy loading
 layout: default
 ---
 
-Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples.
+Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples. Fingers crossed.
 
 These images have been added to the page in various sizes, using the picture element with multiple image sources.
 This is a testing blog right now. Unsplash credit will be fixed soon.
