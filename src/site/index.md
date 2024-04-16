@@ -2,6 +2,7 @@
 title: Roll your own lazy loading
 layout: default
 ---
+![Italy](https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit/dpr_auto/f_auto,q_auto/w_auto:breakpoints_200_1920_30_15/israel-ferrera-ewxZ27OmFrs-unsplash.jpg)
 
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples. Fingers crossed.
 
