@@ -1,10 +1,11 @@
 // Updated breakpoint values
-$bp-xsmall: "(max-width: 480px)";
-$bp-small: "(min-width: 481px) and (max-width: 767px)";
-$bp-medium: "(min-width: 768px) and (max-width: 991px)";
-$bp-large: "(min-width: 992px) and (max-width: 1199px)";
-$bp-xlarge: "(min-width: 1200px) and (max-width: 1599px)";
-$bp-xxlarge: "(min-width: 1600px)";
+$bp-xsmall: "(max-width: 239px)";
+$bp-small: "(min-width: 240px)";
+$bp-medium: "(min-width: 320px)";
+$bp-large: "(min-width: 480px)";
+$bp-xlarge: "(min-width: 600px)";
+$bp-xxlarge: "(min-width: 800px)";
+
 
 // Your mixin
 @mixin bp($point) {
