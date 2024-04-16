@@ -1,11 +1,7 @@
-// Generate a picture tag with just one tiny image src URL which used Netlify image transforms
-// this will be our initial image to be progressively enhanced to load larger images
-
 module.exports = (url, alt = "Missing alt text") => {
   return `<picture class="lazy lazy-initial">
-  <source srcset="/images/tiny/${url}" media="(min-width: 1600px)">
-  <source srcset="/images/tiny/${url}" media="(min-width: 480px)">
-  <img src="/images/tiny/${url}" alt="${alt}" /></picture>`;
+    <source srcset="/images/small/${url}" media="(min-width: 240px)">
+    <source srcset="/images/xsmall/${url}" media="(max-width: 239px)">
+    <img src="/images/xsmall/${url}" alt="${alt}" />
+  </picture>`;
 };
-
-
