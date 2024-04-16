@@ -1,12 +1,15 @@
 // Breakpoints
-$bp-narrow: "(min-width: 400px)";
-$bp-mid: "(min-width: 740px)";
-$bp-wide: "(min-width: 1200px)";
+$bp-xsmall: "(max-width: 239px)";
+$bp-small: "(min-width: 240px)";
+$bp-medium: "(min-width: 320px)";
+$bp-large: "(min-width: 480px)";
+$bp-xlarge: "(min-width: 600px)";
+$bp-xxlarge: "(min-width: 800px)";
 
 // Colours
 $page-color: #fff;
 $text-color: #333;
 $accent-color: #a435ff;
 
-// blur for lazy load
+// Blur for lazy load
 $blurRadius: 20px;

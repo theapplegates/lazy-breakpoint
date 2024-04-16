@@ -7,6 +7,11 @@ NODE_ENV = "10.15.3"
 command = "yarn run start"
 
 [[redirects]]
+from = "/images/tiny/*"
+to = "/.netlify/images/?w=20&fit=cover&url=/images/:splat"
+status = 200
+
+[[redirects]]
 from = "/images/xsmall/*"
 to = "/.netlify/images/?w=160&fit=cover&url=/images/:splat"
 status = 200
