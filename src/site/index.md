@@ -5,6 +5,18 @@ layout: default
 
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples. Fingers crossed.
 
+{% set somePhotos = [
+  {url: "israel-ferrera-ewxZ27OmFrs-unsplash.jpg", credit: "Israel Ferrera", creditURL: "https://unsplash.com/photos/body-of-water-near-buildings-during-daytime-ewxZ27OmFrs?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"}
+] %}
+<section class="post-teaser">
+{%- for photo in somePhotos %}
+  <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
+  {% lazypicture photo.url, "Venice, Italy" %}
+{%- endfor -%}
+</section >
+
+
+
 These images have been added to the page in various sizes, using the picture element with multiple image sources.
 This is a testing blog right now. Unsplash credit will be fixed soon.
 {% set somePhotos = [
