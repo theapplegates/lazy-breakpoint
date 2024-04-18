@@ -2,6 +2,16 @@
 title: Roll your own lazy loading
 layout: default
 ---
+{% set somePhotos = [
+  {url: "parsa-mahmoudi-_XADaY58F9w-unsplash.jpg", credit: "Parsa Mahmoudi", creditURL: "Photo by [Parsa Mahmoudi](https://unsplash.com/@parsamphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-cat-is-hiding-in-the-tall-grass-_XADaY58F9w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"}
+] %}
+<section class="post-teaser">
+{%- for photo in somePhotos %}
+  <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
+  {% lazypicture photo.url, "Venice, Italy" %}
+{%- endfor -%}
+</section >
+
 
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples. Fingers crossed.
 
